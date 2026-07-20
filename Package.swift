@@ -5,7 +5,7 @@ let CoreVersion = "3.6.9"
 let CoreChecksum = "411c8274df0e0088139902b9117b5785f1adf3f730ee532b0466c9247d42f6f7"
 
 let VideoVersion = "2.0.8test"
-let VideoCheckSum = "bbcc71dedc52c41818c684b163b9d39e4cba0186b4c7f867e476fe0d9dde3a9e"
+let VideoCheckSum = "8bb4aaf00bf78a9ebc148ec3d46feb49ca2fcbbec436c99fd20dab2d1ccbbc03"
 
 let BioMatchVersion = "1.2.0"
 let BioMatchCheckSum = "36e12282ea1671d5e9c34e3a3265715020412552335e0fee6782f19f00241178"
