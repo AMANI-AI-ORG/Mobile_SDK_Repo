@@ -4,8 +4,8 @@ import PackageDescription
 let CoreVersion = "3.6.9"
 let CoreChecksum = "411c8274df0e0088139902b9117b5785f1adf3f730ee532b0466c9247d42f6f7"
 
-let VideoVersion = "2.0.8test"
-let VideoCheckSum = "8bb4aaf00bf78a9ebc148ec3d46feb49ca2fcbbec436c99fd20dab2d1ccbbc03"
+let VideoVersion = "2.1.1"
+let VideoCheckSum = "5a11a41d152d896cfa86c4e533251172ad5d11bdfb50a72162926ceb03bd51b1"
 
 let BioMatchVersion = "1.2.0"
 let BioMatchCheckSum = "36e12282ea1671d5e9c34e3a3265715020412552335e0fee6782f19f00241178"
