@@ -1,8 +1,8 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let CoreVersion = "3.7.1"
-let CoreChecksum = "b2e951925933bcedf703fe5c8630117e833c3b18113ed495f5afe58bd8202de7"
+let CoreVersion = "3.7.2"
+let CoreChecksum = "8bacde62abeca1b9c53ee14af4483984b0d97698026f60f2a1f5ff4046cfb49a"
 
 let VideoVersion = "2.1.0test01"
 let VideoCheckSum = "dca36ec7159f924de26a07923d043a08bc5c4a4d0e53a0fa39a06ff1ba8de453"
