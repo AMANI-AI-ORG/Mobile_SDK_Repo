@@ -1,0 +1,26 @@
+{
+  "name": "AmaniSpeechVerifier",
+  "version": "1.0.0",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2026\nAmani Ai AŞ."
+  },
+  "swift_versions": [
+    "5.0"
+  ],
+  "requires_arc": true,
+  "homepage": "http://www.amani.ai/",
+  "authors": {
+    "Amani Ai": "admin@amani.ai"
+  },
+  "summary": "Amani Speech Verifier",
+  "description": "The Amani Speech Verifier provides speech-based identity verification capabilities for iOS applications.",
+  "source": {
+    "http": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSpeechVerifier/v1.0.0/AmaniSpeechVerifier.xcframework.zip"
+  },
+  "documentation_url": "",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "vendored_frameworks": "AmaniSpeechVerifier.xcframework"
+}

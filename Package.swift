@@ -10,8 +10,8 @@ let VideoCheckSum = "a8679d735e4fb24f8c2ad0f2ea1cf92e10206f3cd009ec0ba8896366a2a
 let BioMatchVersion = "1.2.0"
 let BioMatchCheckSum = "36e12282ea1671d5e9c34e3a3265715020412552335e0fee6782f19f00241178"
 
-let SpeechVerifierSDKVersion = "1.0.0"
-let SpeechVerifierSDKCheckSum = "4e9009757e77715a6299fdcef0afaef2affd0d4fa6efe980faf7a30895470e00"
+let AmaniSpeechVerifierVersion = "1.0.1"
+let AmaniSpeechVerifierCheckSum = "da7be0cc06d2f0dfc2f389881698dfe7a7d149ce747003f994fc8946afc43d3d"
 
 let package = Package(
   name: "AmaniRepo",
@@ -33,9 +33,9 @@ let package = Package(
       targets: ["AmaniBioMatchBundle"]
     ),
     .library(
-      name: "SpeechVerifierSDK",
-      targets: ["SpeechVerifierSDKBundle"]
-    )
+      name: "AmaniSpeechVerifier",
+      targets: ["AmaniSpeechVerifierBundle"]
+    ),
   ],
   dependencies: [
     .package(
@@ -97,14 +97,14 @@ let package = Package(
       ]
     ),
     .binaryTarget(
-      name: "SpeechVerifierSDK",
-      url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/SpeechVerifierSDK/v\(SpeechVerifierSDKVersion)/SpeechVerifierSDK.xcframework.zip?raw=true",
-      checksum: "\(SpeechVerifierSDKCheckSum)"
+      name: "AmaniSpeechVerifier",
+      url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniSpeechVerifier/v\(AmaniSpeechVerifierVersion)/AmaniSpeechVerifier.xcframework.zip?raw=true",
+      checksum: AmaniSpeechVerifierCheckSum
     ),
     .target(
-      name: "SpeechVerifierSDKBundle",
+      name: "AmaniSpeechVerifierBundle",
       dependencies: [
-        "SpeechVerifierSDK"
+        "AmaniSpeechVerifier"
       ]
     )
   ]
