@@ -10,8 +10,8 @@ let VideoCheckSum = "a8679d735e4fb24f8c2ad0f2ea1cf92e10206f3cd009ec0ba8896366a2a
 let BioMatchVersion = "1.2.0"
 let BioMatchCheckSum = "36e12282ea1671d5e9c34e3a3265715020412552335e0fee6782f19f00241178"
 
-let AmaniSpeechVerifierVersion = "1.0.1"
-let AmaniSpeechVerifierCheckSum = "da7be0cc06d2f0dfc2f389881698dfe7a7d149ce747003f994fc8946afc43d3d"
+let AmaniSpeechVerifierVersion = "1.0.2"
+let AmaniSpeechVerifierCheckSum = "f29f4af8526542c5c449ea00ce5a33660bdf7ebaa2d8b23d64047c3683476ebe"
 
 let package = Package(
   name: "AmaniRepo",
