@@ -1,0 +1,62 @@
+{
+  "name": "AmaniUI",
+  "version": "1.4.8",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2026\nAmani Ai AŞ."
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "homepage": "http://www.amani.ai/",
+  "authors": {
+    "Amani Ai": "admin@amani.ai"
+  },
+  "summary": "Amani UI SDK",
+  "description": "The Amani Software Development Kit provides the UI components required to perform eKYC flows.",
+  "source": {
+    "git": "https://github.com/AMANI-AI-ORG/IOS.SDK.UI.git",
+    "tag": "1.4.8"
+  },
+  "documentation_url": "https://documentation.amani.ai",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "pod_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit"
+  },
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Sources/AmaniUI/**/*.{h,m,swift}",
+      "exclude_files": [
+        "Sources/AmaniUI/SpeechVerifierIntegration/**/*",
+        "AmaniUnitTests/**/*",
+        "AmaniUI.xcodeproj/**/*"
+      ],
+      "resource_bundles": {
+        "AmaniUI": [
+          "Sources/AmaniUI/**/*.{xib,storyboard,xcassets,xcprivacy}"
+        ]
+      },
+      "dependencies": {
+        "lottie-ios": [
+          "~> 4.5.0"
+        ],
+        "AmaniSDK": [
+          "~> 3.7"
+        ]
+      }
+    },
+    {
+      "name": "SpeechVerifier",
+      "source_files": "Sources/AmaniUI/SpeechVerifierIntegration/**/*.swift",
+      "dependencies": {
+        "AmaniUI/Core": [],
+        "AmaniSpeechVerifier": [
+          "~> 1.0"
+        ]
+      }
+    }
+  ]
+}
